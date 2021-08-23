@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+	--bs-primary: #FFB548;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
 nav {
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -24,4 +35,32 @@ nav {
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
+}
+
+.btn__play {
+	padding: 1rem 5rem;
+	background-color: #FFB548;
+	border: none;
+	color: #1A1917;
+
+}
+
+.heading__text {
+	font-family: 'Bebas Neue';
+}
+
+.text--head {
+	place-items: center;
+}
+
+@media (max-width: 767.98px) {
+
+
+	.h3__main {
+		font-size: 18px;
+	}
+
+	.btn__play {
+		padding: 0.5rem 3rem
+	}
 }
