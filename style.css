@@ -18,3 +18,10 @@ nav {
 .menu__links {
 	width: 40%;
 }
+
+.main-screen {
+	background-image: url(/src/bg-image-1.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
