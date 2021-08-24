@@ -94,6 +94,21 @@ nav {
 	color: #FFB548;
 }
 
+.system-requirements {
+	background-image: url(/src/bg-image-4.svg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.text-orange {
+	color: #FFB548;
+}
+
+.border-grey {
+	border: 2px solid #979797;
+}
+
 @media (max-width: 767.98px) {
 
 
@@ -104,10 +119,16 @@ nav {
 	.btn__play {
 		padding: 0.5rem 3rem
 	}
+
 }
 
 @media(max-width:576px) {
 	.timeline::before {
 		left: -12.5%;
 	}
+
+	.processor {
+		border-left: 1px solid #fff;
+	}
+
 }
