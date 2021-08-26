@@ -99,7 +99,7 @@ nav {
 
 .system-requirements {
 	background-image: url(/src/bg-image-4.svg);
-	height: 100vh;
+	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
 }
@@ -143,17 +143,17 @@ nav {
 
 .quotes__subscribe {
 	background-image: url(/src/bg-image-5.svg);
-	height: 225vh;
+	min-height: 200vh;
 	background-size: cover;
 	background-position: center;
 }
 
 .quotes {
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .subscribe {
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .card__testimoni {
@@ -177,7 +177,7 @@ nav {
 }
 
 footer {
-	height: 10vh;
+	min-height: 10vh;
 }
 
 @media (max-width: 767.98px) {
