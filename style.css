@@ -143,7 +143,7 @@ nav {
 
 .quotes__subscribe {
 	background-image: url(/src/bg-image-5.svg);
-	height: 200vh;
+	height: 225vh;
 	background-size: cover;
 	background-position: center;
 }
@@ -174,6 +174,10 @@ nav {
 
 .input__subscribe:focus {
 	border: none;
+}
+
+footer {
+	height: 10vh;
 }
 
 @media (max-width: 767.98px) {
@@ -221,6 +225,13 @@ nav {
 
 	.label__subs {
 		font-size: 14px;
+	}
+
+	.subscribe {
+		height: 80vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 }
