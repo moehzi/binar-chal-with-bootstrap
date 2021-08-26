@@ -86,12 +86,9 @@ nav {
 	border-radius: 50%;
 	border: 2px solid #fff;
 	position: absolute;
-	left: -8%;
+	left: -6.5%;
 }
 
-.timeline:nth-child(2)::before {
-	top: 10px;
-}
 
 .h3 {
 	color: #FFB548;
