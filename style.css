@@ -34,7 +34,7 @@ nav {
 }
 
 .btn__play {
-	padding: 1rem 5rem;
+	padding: 1rem 4rem;
 	background-color: #FFB548;
 	border: none;
 	color: #1A1917;
@@ -161,6 +161,20 @@ nav {
 	border-radius: 10px;
 }
 
+.container__input {
+	background-color: rgba(255, 255, 255, 8%);
+	border-radius: 10px;
+}
+
+.input__subscribe {
+	background-color: transparent;
+	border: none;
+	color: #FFB548;
+}
+
+.input__subscribe:focus {
+	border: none;
+}
 
 @media (max-width: 767.98px) {
 
@@ -191,6 +205,22 @@ nav {
 
 	.p-text {
 		font-size: 12px;
+	}
+
+	.btn__subs {
+		padding: 0.5rem 1.5rem;
+	}
+
+	.input__subscribe {
+		font-size: 14px;
+	}
+
+	.input__subscribe:focus {
+		font-size: 14px;
+	}
+
+	.label__subs {
+		font-size: 14px;
 	}
 
 }
