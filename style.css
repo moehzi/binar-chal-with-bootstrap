@@ -27,7 +27,7 @@ nav {
 }
 
 .main-screen {
-	background-image: url(/src/bg-image-1.svg);
+	background-image: url(/src/bg-section-1.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -47,14 +47,14 @@ nav {
 }
 
 .about__gallery {
-	background-image: url(/src/bg-image-2.svg);
+	background-image: url(/src/bg-section-2.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 }
 
 .features {
-	background-image: url(/src/bg-image-3.svg);
+	background-image: url(/src/bg-section-3.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -78,7 +78,7 @@ nav {
 }
 
 .system-requirements {
-	background-image: url(/src/bg-image-4.svg);
+	background-image: url(/src/bg-section-4.png);
 	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -122,7 +122,7 @@ nav {
 }
 
 .quotes__subscribe {
-	background-image: url(/src/bg-image-5.svg);
+	background-image: url(/src/bg-section-5.png);
 	min-height: 200vh;
 	background-size: cover;
 	background-position: center;
