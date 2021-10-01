@@ -27,7 +27,7 @@ nav {
 }
 
 .main-screen {
-	background-image: url(/src/bg-section-1.png);
+	background-image: url(src/bg-section-1.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -47,14 +47,14 @@ nav {
 }
 
 .about__gallery {
-	background-image: url(/src/bg-section-2.png);
+	background-image: url(src/bg-section-2.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 }
 
 .features {
-	background-image: url(/src/bg-section-3.png);
+	background-image: url(src/bg-section-3.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -78,7 +78,7 @@ nav {
 }
 
 .system-requirements {
-	background-image: url(/src/bg-section-4.png);
+	background-image: url(src/bg-section-4.png);
 	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -122,7 +122,7 @@ nav {
 }
 
 .quotes__subscribe {
-	background-image: url(/src/bg-section-5.png);
+	background-image: url(src/bg-section-5.png);
 	min-height: 200vh;
 	background-size: cover;
 	background-position: center;
@@ -223,6 +223,82 @@ li.active p {
 	margin: 0 1rem;
 }
 
+.bg-game {
+	background-color: #9C835F;
+	min-height: 100vh;
+}
+
+
+.vs {
+	font-size: 5rem;
+	color: #BD0000;
+	transition: all ease-out 0.1s;
+}
+
+.text-brown {
+	color: #724C21;
+}
+
+.items-center {
+	display: grid;
+	place-items: center;
+}
+
+.selectedBg {
+	padding: 1rem 3rem;
+	background-color: #979797;
+	border-radius: 30px;
+	transition: all ease-out 0.1s;
+}
+
+.winStatus {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: #4C9654;
+	border-radius: 10px;
+	min-height: 15vh;
+	width: 15rem;
+	color: white;
+	transform: rotate(-28.87deg);
+	font-size: 3rem;
+	transition: all ease-in-out 0.1s;
+	padding: 1rem;
+}
+
+.drawStatus {
+	background: #035B0C;
+	transition: all ease-in-out 0.1s;
+}
+
+.refresh {
+	cursor: pointer;
+	transition: all ease-in-out 0.1s;
+}
+
+.suit-choice,
+.suit-choice-com {
+	width: 80%;
+}
+
+.suitContainer,
+.suitContainerCom {
+	height: 20vh;
+	display: grid;
+	place-items: center;
+	transition: all ease-in-out 0.1s;
+}
+
+.suitContainerHover:hover {
+	height: 20vh;
+	background-color: #979797;
+	transition: all ease-in-out 0.1s;
+	padding: 1rem 3rem;
+	border-radius: 30px;
+}
+
+
 @media (max-width: 767.98px) {
 	li.active p {
 		width: 100%
@@ -286,4 +362,35 @@ li.active p {
 		margin: 0 0.5rem;
 	}
 
+	.vs {
+		font-size: 4rem;
+	}
+
+	.suit-choice,
+	.suit-choice-com {
+		width: 50%;
+	}
+
+	.winStatus {
+		min-height: 5vh;
+		width: 10rem;
+		transform: rotate(-28.87deg);
+		font-size: 2rem;
+	}
+
+	.drawStatus {
+		background: #035B0C;
+		transition: all ease-in-out 0.1s;
+		font-size: 2rem;
+	}
+
+	.selectedBg {
+		padding: 0.5rem 1rem;
+		height: 15vh;
+	}
+
+	.suitContainerHover:hover {
+		padding: 0.25rem 0.5rem;
+		height: 15vh;
+	}
 }

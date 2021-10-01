@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>Rock Paper Scissors</title>
+</head>
+
+<body>
+	<section class="bg-game">
+		<div class="container">
+			<div class="gap-4 d-flex align-items-center">
+				<h1 class=" display-5"><a href="index.html" class="nav-link text-brown">&#60;</a></h1>
+				<img src="src/logo-suit.png" alt="" class="img-fluid">
+				<h2 class="text-orange fw-bold">ROCK PAPER SCISSORS</h2>
+			</div>
+			<div class="gap-5 d-flex justify-content-around align-items-center flex-column flex-sm-row">
+				<div class="gap-3 d-flex flex-column align-items-center p-lg-5">
+					<h2 class="fw-bold">PLAYER 1</h2>
+					<div class="flex-row gap-3 suit d-flex flex-sm-column justify-content-center align-items-center">
+						<div class="suitContainer" data-selection="rock">
+							<img src="src/batu 1.png" alt="" class="suit-choice">
+						</div>
+						<div class="suitContainer" data-selection="paper">
+							<img src=" src/kertas 1.png" alt="" class="suit-choice">
+						</div>
+						<div class="suitContainer" data-selection="scissors">
+							<img src="src/gunting 1.png" alt="" class="suit-choice">
+						</div>
+					</div>
+				</div>
+				<h1 class="vs fw-bold">VS</h1>
+				<div class="gap-3 d-flex flex-column align-items-center p-lg-5">
+					<h2 class="fw-bold">COM</h2>
+					<div class="flex-row gap-3 suit d-flex flex-sm-column justify-content-center align-items-center">
+						<div class="suitContainerCom">
+							<img src="src/batu 1.png" alt="" class="suit-choice-com ">
+						</div>
+						<div class="suitContainerCom">
+							<img src=" src/kertas 1.png" alt="" class="suit-choice-com">
+						</div>
+						<div class="suitContainerCom">
+							<img src="src/gunting 1.png" alt="" class="suit-choice-com">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-5 refresh suit d-flex justify-content-center mt-lg-0">
+				<img src="src/refresh.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+	</script>
+	<script src="app.js"></script>
+</body>
+
+</html>
