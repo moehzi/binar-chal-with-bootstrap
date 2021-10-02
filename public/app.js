@@ -4,6 +4,7 @@ const suitChoiceCom = document.querySelectorAll(".suit-choice-com");
 const resetBtn = document.querySelector(".refresh");
 const suitContainerCom = document.querySelectorAll(".suitContainerCom");
 const suitContainer = document.querySelectorAll(".suitContainer");
+
 const choices = [
   {
     name: "rock",
@@ -18,8 +19,11 @@ const choices = [
     beat: "paper",
   },
 ];
+
 init();
+
 let playing = true;
+
 function init() {
   suitContainer.forEach((item) => {
     item.classList.add("suitContainerHover");
@@ -45,6 +49,7 @@ function init() {
     });
   });
 }
+
 function randomComputer() {
   randomNum = Math.trunc(Math.random() * choices.length);
   suitContainerCom[randomNum].classList.add("selectedBg");
@@ -58,6 +63,7 @@ function isWinner(choices, opponentSelect) {
   });
   return choices.beat === opponentSelect.name;
 }
+
 function reset() {
   displayStatus("VS");
   textWinner.classList.remove("winStatus");
@@ -72,6 +78,7 @@ function reset() {
 resetBtn.addEventListener("click", function () {
   reset();
 });
+
 function displayStatus(text) {
   textWinner.textContent = text;
 }
