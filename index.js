@@ -1,6 +1,7 @@
 const { response } = require("express");
 const express = require("express");
 const app = express();
+const PORT = process.env.PORT || 4000;
 
 const jwt = require("jsonwebtoken");
 
@@ -26,16 +27,11 @@ app.get("/game", (req, res) => {
 app.post("/api/login", (req, res) => {
   const { username, password } = req.body;
   if (username === user.username && password === user.password) {
-    jwt.sign(
-      { username, password },
-      "secretkey",
-      { expiresIn: "30s" },
-      (err, token) => {
-        res.json({
-          token,
-        });
-      }
-    );
+    jwt.sign({ username, password }, "secretkey", (err, token) => {
+      res.status(201).json({
+        token,
+      });
+    });
   } else {
     res.sendStatus(401);
   }
@@ -46,11 +42,24 @@ app.post("/api/me", verifyToken, (req, res) => {
     if (err) {
       res.sendStatus(401);
     } else {
-      res.json({
+      res.status(201).json({
         authData,
       });
-      res.status(201);
     }
+  });
+});
+
+app.get("*", (req, res) => {
+  res.status(404).send({
+    status: "FAIL",
+    message: "not found",
+  });
+});
+
+app.all("*", (req, res) => {
+  res.status(500).send({
+    status: "ERROR",
+    message: "the error message",
   });
 });
 
@@ -69,9 +78,8 @@ function verifyToken(req, res, next) {
     // Next middleware
     next();
   } else {
-    // Forbidden
     res.sendStatus(401);
   }
 }
 
-app.listen(5000);
+app.listen(PORT, () => console.log(`app listening on port ${PORT}`));
