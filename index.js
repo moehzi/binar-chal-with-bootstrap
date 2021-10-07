@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 4000;
 
 const jwt = require("jsonwebtoken");
 const verifyToken = require("./middlewares/auth.js");
+const errorHandling = require("./middlewares/errorHandling.js");
 
 const user = {
   username: "moehzi",
@@ -58,11 +59,17 @@ app.post("/api/me", verifyToken, (req, res) => {
   });
 });
 
+app.get("/error", (req, res) => {
+  throw new Error("Something went wrong");
+});
+
 app.all("*", (req, res) => {
   res.status(404).send({
     status: "FAIL",
     message: "not found",
   });
 });
+
+app.use(errorHandling);
 
 app.listen(PORT, () => console.log(`app listening on port ${PORT}`));
